@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="no">
+
+<head>
+    <title> Tittel på siden </title>
+    <!--<link rel="stylesheet" href="stylesheet.css">-->
+    <meta charset="utf-8">
+    <div id="paste">
+
+    </div>
+    <div id="rollspam">
+
+    </div>
+</head>
+<script src="javascript.js" async> </script>
+
+<body>
+    <div id="inputs">
+        <label> I want to roll </label>
+        <input type="text" id="rollAmount" value="10" size="5">
+        <label> times with </label>
+        <input type="text" id="odds" value="50" size="5">
+        <label> % odds until it has succeeded </label>
+        <input type="text" id="succeeds" value="3" size="5">
+        <label> times in a row. </label>
+        <br>
+        <select id="display" name="display">
+            <option value="1">Don't show individual rolls</option>
+            <option value="2">Show individual rolls</option>
+        </select>
+        <br>
+        <div id="drawbutton">
+            <button id="drawButton" type="button" onclick="getVars()">Roll</button>
+        </div>
+</body>
+
+</html>
