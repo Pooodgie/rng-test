@@ -14,7 +14,6 @@ function getVars() {
     var odds = document.getElementById("odds").value / 100;
     var succeeds = document.getElementById("succeeds").value;
     var displayRolls = document.getElementById("display").value;
-    console.log("odds are " + odds + " , roll amount is " + numAVG + ", succeeds are " + succeeds + ", displayRolls is " + displayRolls);
     document.getElementById("rollspam").innerHTML = " ";
 
     start(odds, succeeds, numAVG, displayRolls);
@@ -73,7 +72,6 @@ function start(odds, success_desired, numAVG, displayRolls) {
                 document.getElementById("rollspam").innerHTML += ("<br>");
             }
             numberOfSuccesses = 0;
-            console.log(numRolls[i]);
         }
     }
     for (var i = 0; i < numRolls.length; i++) {
