@@ -9,6 +9,7 @@
 
     </div>
     <div id="rollspam">
+        
 
     </div>
 </head>
@@ -16,19 +17,34 @@
     #weird {
         color: red;
     }
+
+    #failtrack {
+        color: rgb(114, 122, 0);
+    }
+
     #paste {
+        margin-bottom: 10px;
         border: solid;
     }
+
     #rollspam {
         border: solid;
     }
+
     #inputs {
+        margin-top: 10px;
         border: solid;
+    }
+    #fail {
+        color: red;
+    }
+    #success {
+        color: greenyellow;
     }
 </style>
 <script src="javascript.js" async> </script>
 
-<body>
+<body onload="hideStupidStuff()">
     <div id="inputs">
         <label> I want to roll </label>
         <input type="text" id="rollAmount" value="10" size="5">
